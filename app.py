@@ -6,7 +6,7 @@ import requests
 
 # Function to fetch data from Flask backend
 def fetch_sweater_data():
-    url = "http://127.0.0.1:5000/sweaters"  # Flask endpoint
+    url = "https://werty-hgeda5gpc0gvcrek.canadacentral-01.azurewebsites.net/sweaters"  # Flask endpoint
     response = requests.get(url)
     if response.status_code == 200:
         return pd.DataFrame(response.json())
